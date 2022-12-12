@@ -1,0 +1,5 @@
+name: "swap position"
+author: Latex
+main: Latex\Loader
+version: 1.0.0
+api: 4.0.0
