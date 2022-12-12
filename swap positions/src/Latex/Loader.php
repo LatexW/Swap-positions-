@@ -35,12 +35,13 @@ $this->getScheduler()->scheduleRepeatingTask(new ClosureTask(function () {
 $this->getScheduler()->scheduleDelayedTask(new ClosureTask(function () {
       $seconds = 5;
   
-      while ($seconds > 0) {
+      while ($seconds > 0) -> if ($seconds > 0) {
         Server::getInstance()->broadcastMessage("Swaping positions in $seconds seconds.");
         $seconds--;
       }
-    }), 20*60*5 - 20*5);
+    }), 20*60*5 - 20*1);
 }
 }
+
 
 
